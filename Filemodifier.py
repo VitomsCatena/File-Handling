@@ -41,3 +41,14 @@ except FileNotFoundError:
     except Exception as e:
         # 6. Handling any other potential errors
         print(f"\nAn unexpected error occurred: {e}")
+
+# Calling the main function to run the program
+if __name__ == "__main__":
+    # Creating a dummy file for testing the success case
+    if not os.path.exists("example.txt"):
+        with open("example.txt", "w") as f:
+            f.write("This is a test file.\n")
+            f.write("It contains multiple lines.")
+    
+    # Running the program
+    modify_and_save_file()
