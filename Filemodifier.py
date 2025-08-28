@@ -27,3 +27,9 @@ with open(input_filename, 'r') as file:
         #  Write the modified content to a new file
         with open(output_filename, 'w') as new_file:
             new_file.write(modified_content)
+
+print(f"Content has been modified and saved to '{output_filename}'.")
+        print("\nModified content:")
+        print("-" * 30)
+        print(modified_content)
+        print("-" * 30)
