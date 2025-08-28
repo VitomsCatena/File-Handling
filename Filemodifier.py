@@ -33,3 +33,11 @@ print(f"Content has been modified and saved to '{output_filename}'.")
         print("-" * 30)
         print(modified_content)
         print("-" * 30)
+
+except FileNotFoundError:
+        # specific error handling if the file doesn't exist
+        print(f"\nError: The file '{input_filename}' was not found.")
+        print("Please make sure the file exists in the correct directory.")
+    except Exception as e:
+        # 6. Handling any other potential errors
+        print(f"\nAn unexpected error occurred: {e}")
