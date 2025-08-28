@@ -7,3 +7,9 @@ def modify_and_save_file():
 
     Includes error handling for missing files.
     """
+#  Asking the user for the input filename
+    input_filename = input("Enter the name of the file to read: ")
+    output_filename = "modified_output.txt"
+
+    try:
+        #  Opening the file and reading its contents
